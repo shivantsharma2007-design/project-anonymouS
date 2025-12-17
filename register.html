@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register - Sharma College</title>
+    <style>
+        body {font-family: Arial, sans-serif; background:#f4f4f4; margin:0;}
+        header{background:#003366;color:#fff;padding:20px;text-align:center}
+        .container{max-width:500px;margin:40px auto;background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+        h1{color:#003366;text-align:center;margin-top:0}
+        label{display:block;margin:12px 0 6px;font-weight:600}
+        input, select{width:100%;padding:10px;border:1px solid #ccc;border-radius:4px}
+        .row{display:flex;gap:10px}
+        .row .col{flex:1}
+        .btn{background:#0055a5;color:white;border:none;padding:12px;border-radius:6px;font-weight:700;cursor:pointer;margin-top:12px}
+        .small{font-size:0.9em;margin-top:8px;color:#555}
+        a{color:#0055a5;text-decoration:none}
+        footer{background:#003366;color:white;padding:12px;text-align:center;margin-top:40px}
+    </style>
+</head>
+<body>
+<header>
+    <h2>Sharma College of Engineering</h2>
+</header>
+
+<div class="container">
+    <h1>Create an account</h1>
+    <form method="get" action="login.html">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="first_name" placeholder="First name" required maxlength="50">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="last_name" placeholder="Last name" required maxlength="50">
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" pattern="[0-9+\-\s]{7,20}">
+
+        <div class="row">
+            <div class="col">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" minlength="6" placeholder="At least 6 characters" required>
+            </div>
+            <div class="col">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirm" name="confirm_password" minlength="6" placeholder="Re-type password" required>
+            </div>
+        </div>
+
+        <label for="dept">Department</label>
+        <select id="dept" name="department">
+            <option>Computer Science</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+            <option>Civil</option>
+            <option>AIML</option>
+        </select>
+
+        <button class="btn" type="submit">Register</button>
+
+        <p class="small">Already have an account? <a href="login.html">Login here</a>.</p>
+    </form>
+</div>
+
+<footer>© 2025 SHARMA COLLEG OF ENGINEERING</footer>
+</body>
+</html>
